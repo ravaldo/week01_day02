@@ -33,14 +33,12 @@ print([x for x in numbers if x%2==0])
 print(max(numbers) - min(numbers))
 
 # 3...
-i = 1
-for i in range(len(numbers)):
+for i in range(1, len(numbers)):
 	if numbers[i] == numbers[i-1]:
 		print(True)
 
 # 4...
 sum = 0
-i = 0
 ignore = False
 for i in range(len(numbers)):
 	if numbers[i] == 6:
@@ -57,7 +55,6 @@ print(sum)
 
 # 5...
 sum = 0
-i = 1
 ignoreNext = False
 for i in range(len(numbers)):
 	if numbers[i] == 13:
