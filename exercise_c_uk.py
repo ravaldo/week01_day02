@@ -22,6 +22,26 @@ united_kingdom = [
 # 4. Use a loop to find the total population of the UK.
 
 
+# 1
 united_kingdom[1]["capital"] = "Cardiff"
+
+# 2
+ni = {
+    "name": "Northern Ireland",
+    "population": 1811000,
+    "capital": "Belfast"
+	}
+united_kingdom.append(ni)
+
+# 3
+for country in united_kingdom:
+	print(country["name"])
+
+# 4
+total = 0
+for c in united_kingdom:
+	total += c["population"]
+print(f"total population of the UK is {total}")
+
 
 print(united_kingdom)

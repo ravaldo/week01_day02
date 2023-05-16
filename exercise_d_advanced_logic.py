@@ -26,7 +26,45 @@ numbers = [1, 6, 2, 2, 7, 1, 6, 13, 99, 7]
 
 
 
+# 1...
+print([x for x in numbers if x%2==0])
 
+# 2...
+print(max(numbers) - min(numbers))
 
+# 3...
+i = 1
+for i in range(len(numbers)):
+	if numbers[i] == numbers[i-1]:
+		print(True)
 
+# 4...
+sum = 0
+i = 0
+ignore = False
+for i in range(len(numbers)):
+	if numbers[i] == 6:
+		ignore = True
+		continue
+	if numbers[i] == 7:
+		ignore = False
+		continue
+	if ignore:
+		continue
+	sum += numbers[i]
+#	print(" added")
+print(sum)
 
+# 5...
+sum = 0
+i = 1
+ignoreNext = False
+for i in range(len(numbers)):
+	if numbers[i] == 13:
+		ignoreNext = True
+		continue
+	if ignoreNext:
+		ignoreNext = False
+		continue
+	sum += numbers[i]
+print(sum)
