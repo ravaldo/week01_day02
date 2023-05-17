@@ -84,8 +84,8 @@ users["Homer"] = {
     "home_town": "Springfield",
     "pets": [
       {
-        "name": "monty",
-        "species": "Santa's Little Helper"
+        "name": "Santa's Little Helper",
+        "species": "dog"
       }
     ]
   }

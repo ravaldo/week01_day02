@@ -18,8 +18,11 @@ print(stops.index("Linlithgow"))
 stops.remove("Livingston")
 stops.pop(2)
 print(len(stops))
+
+sortedstops = sorted(stops)	# does not modify original list
 stops.sort()
 stops.reverse()
+stops.sort(reverse = True)
 
 print(stops)
 
